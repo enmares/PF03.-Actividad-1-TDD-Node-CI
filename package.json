@@ -1,0 +1,21 @@
+{
+    "name": "funciones-pin-fibonacci",
+    "version": "1.0.0",
+    "description": "Función Fibonacci",
+    "main": "calcular.js",
+    "type": "module",
+    "scripts": {
+      "test": "vitest run",
+      "test:watch": "vitest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "vitest": "^4.0.2"
+    },
+    "dependencies": {
+      "chalk": "^5.6.2"
+    }
+  }
+  
