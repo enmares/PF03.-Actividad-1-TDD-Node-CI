@@ -1,7 +1,7 @@
 {
-    "name": "funciones-pin-fibonacci",
+    "name": "funcion-fibonacci",
     "version": "1.0.0",
-    "description": "Función Fibonacci",
+    "description": "Calculadora mínima con TDD(add, sub, mul, div, sqrt)",
     "main": "calcular.js",
     "type": "module",
     "scripts": {
@@ -18,4 +18,3 @@
       "chalk": "^5.6.2"
     }
   }
-  
