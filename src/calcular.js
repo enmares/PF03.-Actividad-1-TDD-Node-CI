@@ -1,25 +1,15 @@
 
 function esPinValido(pin){
-    
-    if(pin == null || pin == undefined || pin.length == 0 || !(pin.length >= 4 && pin.length <=6) || isNaN(pin) || comprobarDigitosIguales(pin) == true){
-        return false;
-    }
-    return true;
+    return (pin == null || pin == undefined || pin.length == 0 || !(pin.length >= 4 && pin.length <=6) || isNaN(pin) || comprobarDigitosIguales(pin) == true) == false;
 }
 
 function comprobarDigitosIguales(string){
-
-let aux = string[0];
-let res = true;
-
+    let aux = string[0];
     for(let i=1; i<string.length; i++){
-        
-        if(string[i] != aux){
-            res = false;
-            break;
-        }
+        if(string[i] != aux)
+            return false;
     }
-    return res;
+    return true;
 }
 
 
@@ -43,6 +33,7 @@ function fibonacci(n){
     }
     return c;
 }
+
 export{
     fibonacci,
     esPinValido
