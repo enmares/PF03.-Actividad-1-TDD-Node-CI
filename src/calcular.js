@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 function esPinValido(pin){
     
@@ -22,3 +23,28 @@ let res = true;
     }
     return res;
 }
+=======
+function fibonacci(n){
+    if (n <= 0 || n == 0 || n == 1)
+        return 0;
+    if (n == 2 || n == 3)
+        return 1;
+    if (n == 4)
+        return 2;
+
+    let a = 1;
+    let b = 1;
+    let c = a + b;
+    
+    for(let i = 0; i < n - 4; i++){
+        a = b;
+        b = c;
+        c = a + b;
+    }
+    return c;
+}
+
+export{
+    fibonacci
+}
+>>>>>>> b03fe57435326eed2adb03223ce84e5ce2ef8691
