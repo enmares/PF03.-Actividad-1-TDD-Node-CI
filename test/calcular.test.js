@@ -10,16 +10,14 @@ describe('funcion-fibonacci', () => {
   })
 })
 
-/*
 describe('funcion-esPinValido', () => {
   it('esPinValido', () => {
-    expect(null).toBe(false)
-    expect(undefined).toBe(false);
-    expect("").toBe(false)
-    expect("123456789").toBe(false)
-    expect("123b4").toBe(false);
-    expect("11111").toBe(false);
-    expect("67221").toBe(true);
+    expect(esPinValido(null)).toBe(false)
+    expect(esPinValido(undefined)).toBe(false);
+    expect(esPinValido("")).toBe(false)
+    expect(esPinValido("123456789")).toBe(false)
+    expect(esPinValido("123b4")).toBe(false);
+    expect(esPinValido("11111")).toBe(false);
+    expect(esPinValido("67221")).toBe(true);
   })
 })
-*/
