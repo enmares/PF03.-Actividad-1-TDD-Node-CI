@@ -1,14 +1,12 @@
-<<<<<<< HEAD
 
 function esPinValido(pin){
     
-    if(pin == null || pin == undefined || pin.length == 0 || (pin.length >= 4 && pin.length <=6) || !Number.isNaN(pin) || comprobarDigitosIguales(pin) == true){
-        return true;
+    if(pin == null || pin == undefined || pin.length == 0 || !(pin.length >= 4 && pin.length <=6) || isNaN(pin) || comprobarDigitosIguales(pin) == true){
+        return false;
     }
-    return false;
+    return true;
 }
 
-//Comprueba si la 
 function comprobarDigitosIguales(string){
 
 let aux = string[0];
@@ -23,7 +21,9 @@ let res = true;
     }
     return res;
 }
-=======
+
+
+
 function fibonacci(n){
     if (n <= 0 || n == 0 || n == 1)
         return 0;
@@ -43,8 +43,7 @@ function fibonacci(n){
     }
     return c;
 }
-
 export{
-    fibonacci
+    fibonacci,
+    esPinValido
 }
->>>>>>> b03fe57435326eed2adb03223ce84e5ce2ef8691
